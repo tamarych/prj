@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pischa dlia zhilischa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <span>Pischa Dlia Zhilischa <br> Corporation</span>
+    </div>
+    <nav>
+        <ul class="headerMenu">
+            <li class="close-menu-right">&times</li>
+
+            <li><a href="#" title="search" class="search"><img src="img/icons/search32.png" alt="">Search</a></li>
+
+            <li><a href="#" title="bucket" id="open-card"><img src="img/icons/bag32.png" alt="">Card</a></li>
+
+            <li><a href="#" title="registration" class="reg" id="reg"><img src="img/icons/reg32.png" alt="">Registration</a>
+            </li>
+
+            <li id="signed"></li>
+        </ul>
+        <span class="mobile-button-right">‎☰</span>
+    </nav>
+</header>
+
+<aside class="side">
+    <ul class="menu">
+        <li class="close-menu-left">&times</li>
+        <li class="menu__list"><a href="#"><img src="img/icons/usa32.png" alt="">USA</a>
+            <ul class="menu__drop">
+                <li><a data-page-type="dishes" data-dish-type="usa-burgers">Бургери</a></li>
+                <li><a data-page-type="dishes" data-dish-type="usa-chicken">Курка</a></li>
+                <li><a data-page-type="dishes" data-dish-type="usa-salads">Салати</a></li>
+            </ul>
+        </li>
+        <li class="menu__list"><a href="#"><img src="img/icons/taco32.png" alt="">Mexican</a>
+            <ul class="menu__drop">
+                <li><a href="#" data-page-type="dishes" data-dish-type="mex-burrito">Бурріто</a></li>
+                <li><a href="#" data-page-type="dishes" data-dish-type="mex-quesadilia">Кесаділья</a></li>
+                <li><a href="#" data-page-type="dishes" data-dish-type="mex-taco">Тако</a></li>
+            </ul>
+        </li>
+        <li class="menu__list"><a href="#"><img src="img/icons/japan32.png" alt="">Japan</a>
+            <ul class="menu__drop">
+                <li><a href="#" data-page-type="dishes" data-dish-type="jap-rolls">Роли</a></li>
+                <li><a href="#" data-page-type="dishes" data-dish-type="jap-tempura">Темпура</a></li>
+                <li><a href="#" data-page-type="dishes" data-dish-type="jap-udon">Удон</a></li>
+            </ul>
+        </li>
+        <li class="menu__list"><a href="#" data-page-type="lunch" data-dish-type="lunch"><img src="img/icons/bl32.png"
+                                                                                              alt="">Lunches</a></li>
+    </ul>
+    <span class="mobile-button-left">‎☰</span>
+</aside>
+
+<div class="card">
+    <div class="card-content">
+        <span class="close">&times;</span>
+        <p>КОРЗИНА</p>
+        <div class="card-container">
+            <div id="orderlist"></div>
+            <div class="total">
+                <div><b>Загальна вартість</b>:</div>
+                <div id="card-total"></div>
+                <input type="submit" class="order" value="Замовити"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="main">
+
+
+</div>
+<script type="text/javascript" src="js/ajaxGet.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="js/burger.js"></script>
+<script type="text/javascript" src="js/sortingDishes.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
+<script type="text/javascript" src="js/card.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/search.js"></script>
+<script type="text/javascript" src="js/renderDishesPage.js"></script>
+
+</body>
+</html>

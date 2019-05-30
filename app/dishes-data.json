@@ -1,0 +1,347 @@
+{
+	"usa-burgers": [
+		{
+			"pic": "img/dishes/burger-beef.jpg",
+			"title": "Бургер з яловичиною",
+			"ingredients": [
+				"Яловичина",
+				"Чеддер",
+				"Салат айсберг"
+			],
+			"price": "300"
+		},
+		{
+			"pic": "img/dishes/burger-pork.jpg",
+			"title": "Бургер зі свининою",
+			"ingredients": [
+				"Свинина",
+				"Камамбер",
+				"Помідор"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/burger-tofu.jpg",
+			"title": "Бургер з тофу",
+			"ingredients": [
+				"Сир тофу",
+				"Норі",
+				"Огірок"
+			],
+			"price": "350",
+			"veggie": "true"
+		}
+	],
+	"usa-chicken": [
+		{
+			"pic": "img/dishes/chicken-naggets.jpg",
+			"title": "Наггетси",
+			"ingredients": [
+				"Курка",
+				"Паніровка",
+				"Журавлиний соус"
+			],
+			"price": "170"
+		},
+		{
+			"pic": "img/dishes/chicken-strips.jpg",
+			"title": "Курячі стріпси",
+			"ingredients": [
+				"Курка",
+				"Сухарі панко",
+				"Соус чілі"
+			],
+			"price": "180"
+		},
+		{
+			"pic": "img/dishes/chicken-soy.jpg",
+			"title": "Соя зі смаком курки",
+			"ingredients": [
+				"Соя",
+				"Сухарі панко",
+				"Сирний соус"
+			],
+			"price": "210",
+			"veggie": "true"
+		}
+	],
+	"usa-salads": [
+		{
+			"pic": "img/dishes/salad-chicken.jpg",
+			"title": "Салат з куркою",
+			"ingredients": [
+				"Курка",
+				"Помідор",
+				"Квасоля"
+			],
+			"price": "100"
+		},
+		{
+			"pic": "img/dishes/salad-greek.jpg",
+			"title": "Грецький",
+			"ingredients": [
+				"Маслини",
+				"Огірок",
+				"Помідор"
+			],
+			"price": "200",
+			"veggie": "true"
+		},
+		{
+			"pic": "img/dishes/salad-sea.jpg",
+			"title": "Морський",
+			"ingredients": [
+				"Лосось",
+				"Мідії",
+				"Буряк"
+			],
+			"price": "250"
+		}
+	],
+	"mex-burrito": [
+		{
+			"pic": "img/dishes/burrito-veggie.jpg",
+			"title": "Буріто з овочами",
+			"ingredients": [
+				"Помідор",
+				"Шпинат",
+				"Соус песто"
+			],
+			"price": "300",
+			"veggie": "true"
+		},
+		{
+			"pic": "img/dishes/burrito-chicken.jpg",
+			"title": "Буріто з куркою",
+			"ingredients": [
+				"Курка",
+				"Брокколі",
+				"Часниковий соус"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/burrito-fish.jpg",
+			"title": "Буріто з рибою",
+			"ingredients": [
+				"Лосось",
+				"Рукола",
+				"Сметана"
+			],
+			"price": "350"
+		}
+	],
+	"mex-quesadilia": [
+		{
+			"pic": "img/dishes/quesadilia-veggie.jpg",
+			"title": "Кесаділья вегетаріанська",
+			"ingredients": [
+				"Кабачки",
+				"Помідор",
+				"Цибуля"
+			],
+			"price": "200",
+			"veggie": "true"
+		},
+		{
+			"pic": "img/dishes/quesadilia-chicken.jpg",
+			"title": "Кесаділья з куркою",
+			"ingredients": [
+				"Курка",
+				"Кукурудза",
+				"Болгарський перець"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/quesadilia-cheese.jpg",
+			"title": "Кесаділья з сиром",
+			"ingredients": [
+				"Камамбер",
+				"Пармезан",
+				"Брі"
+			],
+			"price": "250",
+			"veggie": "true"
+		}
+	],
+	"mex-taco": [
+		{
+			"pic": "img/dishes/taco-chili.jpg",
+			"title": "Тако чілі",
+			"ingredients": [
+				"Фарш",
+				"Соус чілі",
+				"Халапеньо"
+			],
+			"price": "100"
+		},
+		{
+			"pic": "img/dishes/taco-classic.jpg",
+			"title": "Тако класичне",
+			"ingredients": [
+				"Фарш",
+				"Помідор",
+				"Цибуля"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/taco-shrimp.jpg",
+			"title": "Тако з креветками",
+			"ingredients": [
+				"Креветки",
+				"Шпинат",
+				"Сметана"
+			],
+			"price": "250"
+		}
+	],
+	"jap-rolls": [
+		{
+			"pic": "img/dishes/roll-fila.jpg",
+			"title": "Філадельфія",
+			"ingredients": [
+				"Лосось",
+				"Сир Філадельфія",
+				"Норі"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/roll-dragon.jpg",
+			"title": "Дракон",
+			"ingredients": [
+				"Вугор",
+				"Авокадо",
+				"Огірок"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/roll-maki.jpg",
+			"title": "Макі",
+			"ingredients": [
+				"Огірок",
+				"Рис",
+				"Кунжут"
+			],
+			"price": "350",
+			"veggie": "true"
+		}
+	],
+	"jap-tempura": [
+		{
+			"pic": "img/dishes/tempura-tori.jpg",
+			"title": "Торі темпура",
+			"ingredients": [
+				"Курка",
+				"Часник",
+				"Перець чілі"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/tempura-fish.jpg",
+			"title": "Темпура з морською рибою",
+			"ingredients": [
+				"Зубатка",
+				"Цибуля",
+				"Лимон"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/tempura-veggie.jpg",
+			"title": "Темпура овочева",
+			"ingredients": [
+				"Спаржа",
+				"Шампіньони",
+				"Морква"
+			],
+			"price": "250",
+			"veggie": "true"
+		}
+	],
+	"jap-udon": [
+		{
+			"pic": "img/dishes/udon-mushroom.jpg",
+			"title": "Удон з грибами",
+			"ingredients": [
+				"Шампіньони",
+				"Соус чілі",
+				"Халапеньо"
+			],
+			"price": "100",
+			"veggie": "true"
+		},
+		{
+			"pic": "img/dishes/udon-chicke.jpg",
+			"title": "Удон з куркою",
+			"ingredients": [
+				"Курка",
+				"Тофу",
+				"Цибуля"
+			],
+			"price": "200"
+		},
+		{
+			"pic": "img/dishes/udon-veggie.jpg",
+			"title": "Удон з овочами",
+			"ingredients": [
+				"Корейська морква",
+				"Огірок",
+				"Помідор"
+			],
+			"price": "250",
+			"veggie": "true"
+		}
+	],
+	"lunch": [
+		{
+			"title": "Понеділок",
+			"ingredients": [
+				"Салат з запеченою тиквою",
+				"Борщ",
+				"Кукурудзяна каша"
+			],
+			"price": "100"
+		},
+		{
+			"title": "Вівторок",
+			"ingredients": [
+				"Салат зі смаженими грибами",
+				"Бульон",
+				"Тушена капуста"
+			],
+			"price": "100"
+		},
+		{
+			"title": "Середа",
+			"ingredients": [
+				"Салат з рибою",
+				"Рамен з куркою",
+				"Бефстроганов"
+			],
+			"price": "100"
+		},
+		{
+			"title": "Четвер",
+			"ingredients": [
+				"Шуба",
+				"Гороховий суп",
+				"Овочеве рагу"
+			],
+			"price": "100"
+		},
+		{
+			"title": "П'ятниця",
+			"ingredients": [
+				"Салат по-селянськи",
+				"Крем-суп з моркви",
+				"Кебаб"
+			],
+			"price": "100"
+		}
+	]
+}
