@@ -1,6 +1,6 @@
 document.querySelector('.search').onclick = function() {
-	renderPage();
-}
+	renderPage('search');
+};
 
 function search() {
 	ajaxGet('dishes-data.json', function(data) {

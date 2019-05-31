@@ -1,18 +1,22 @@
 function setupMainPageListeners() {
-	document.querySelector('.menu').onclick = function() {
-		renderPage();
+	document.querySelector('.menu').onclick = function(event) {
+		renderPage('lunch', {
+			dishType: event.target.getAttribute('data-dish-type')
+		});
 	};
 
 	document.querySelector('.logo').onclick = function() {
-		renderPage();
+		renderPage('main');
 	};
 
 	document.querySelector('.order').onclick = function() {
 		order();
 	};
 
-	document.querySelector('[data-page-type]').onclick = function() {
-		renderPage();
+	document.querySelector('[data-page-type]').onclick = function(event) {
+		renderPage('dishes', {
+			dishType: event.target.getAttribute('data-dish-type')
+		});
 	};
 
 	// Activate slider listeners
@@ -21,58 +25,64 @@ function setupMainPageListeners() {
 
 window.onload = function() {
 
-	loadHTML('view/main.html', setupMainPageListeners);
+	loadTemplate('main_template', setupMainPageListeners);
 };
 
-function renderPage(data) {
+function renderPage(page, options) {
 
-	if(event.target.className == 'reg') {
-		loadHTML('view/registration.html', function() {
-			document.querySelector('.reg-button').onclick = function() {
-				register();
-			};
+	switch(page) {
 
-			document.querySelector('.login-button').onclick = function() {
-				check();
-			};
+		case 'register': {
+			loadTemplate('registration_template', function() {
+				document.querySelector('.reg-button').onclick = function() {
+					register();
+				};
 
-			document.querySelector('.logout-button').onclick = function() {
-				logout();
-			};
-		});
+				document.querySelector('.login-button').onclick = function() {
+					check();
+				};
+
+				document.querySelector('.logout-button').onclick = function() {
+					logout();
+				};
+			});
+
+			break;
+		}
+
+		case 'main': {
+			loadTemplate('main_template', setupMainPageListeners);
+
+			break;
+		}
+
+		case 'search': {
+			loadTemplate('search_template', function() {
+				document.querySelector('.search-result').onclick = function() {
+					search();
+				};
+			});
+
+			break;
+		}
+
+		case 'dishes': {
+			loadTemplate('dishes_template');
+			renderDishesPage(options.dishType);
+
+			break;
+		}
+
+		case 'lunch': {
+			loadTemplate('dishes_template');
+			renderDishesPage(options.dishType);
+			renderDishesPage(event.target.getAttribute('data-dish-type'));
+
+			break;
+		}
+
 	}
 
-	if(event.target.className == 'logo') {
-		loadHTML('view/main.html', setupMainPageListeners);
-	}
-
-	if(event.target.className == 'search') {
-		loadHTML('view/search.html', function() {
-			document.querySelector('.search-result').onclick = function() {
-				search();
-			};
-		});
-	}
-
-	if(event.target.getAttribute('data-page-type') == 'dishes') {
-		loadHTML('view/dishes.html');
-		renderDishesPage(event.target.getAttribute('data-dish-type'));
-	}
-
-	if(event.target.getAttribute('data-page-type') == 'lunch') {
-		loadHTML('view/dishes.html');
-		renderDishesPage(event.target.getAttribute('data-dish-type'));
-	}
-
-}
-
-
-function loadHTML(url, afterContentLoaded) {
-	ajaxGet(url, function(data) {
-		document.querySelector('#main').innerHTML = data;
-
-		afterContentLoaded && afterContentLoaded();
-	});
 }
 
 

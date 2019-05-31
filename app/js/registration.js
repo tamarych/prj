@@ -1,5 +1,5 @@
 document.querySelector('.reg').onclick = function() {
-	renderPage();
+	renderPage('register');
 };
 
 function pushUserToHeader() {
