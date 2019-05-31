@@ -76,7 +76,6 @@ function renderPage(page, options) {
 		case 'lunch': {
 			loadTemplate('dishes_template');
 			renderDishesPage(options.dishType);
-			renderDishesPage(event.target.getAttribute('data-dish-type'));
 
 			break;
 		}
